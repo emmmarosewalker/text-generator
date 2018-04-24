@@ -6,7 +6,7 @@ export class Card extends React.Component{
 			<div className="card p-3 m-3">
 			{this.props.cardContent}
 			</div>
-			);
+		);
 	}
 }
 
