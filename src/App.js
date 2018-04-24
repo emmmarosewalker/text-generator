@@ -42,8 +42,9 @@ class App extends Component {
     // Check if the value was from changing no. paragraphs or html/plain text. Set API params accordingly
     isNum ? params['paras'] = val : params['paras'] = this.state.numParagraphs;
     isNum ? params['format'] = this.state.returnType : params['format'] = val;
+    console.log(params);
 
-    // API call
+    // API call - note that cross-origin resource sharing must be enabled in your browser to receive the axios response
     const apiUrl = "https://baconipsum.com/api";
     axios.get(apiUrl, {
       params
@@ -63,7 +64,7 @@ class App extends Component {
       <h1>Bacon Ipsum Generator</h1>
       <Input onChange={this.handleChange} />
       <Card cardContent={this.state.text} />
-      <p>This generator is based on the <a href="https://baconipsum.com/json-api/">Bacon Ipsum API</a></p> // Credit to original API author
+      <p>This generator is based on the <a href="https://baconipsum.com/json-api/">Bacon Ipsum API</a></p>
       </div>
       );
   }
