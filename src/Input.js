@@ -30,7 +30,7 @@ export class Input extends React.Component{
                     <option value='json'>No</option>
                 </select>
             </form>
-        );
+            );
     }
 }
 Input.propTypes = {

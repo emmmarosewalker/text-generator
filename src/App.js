@@ -16,7 +16,7 @@ class App extends Component {
   }
   handleChange(val, isNum){
     /* The onChange handler in the child component tells us if the input change was for the num of paragraphs, 
-      or the preferred response type. This tells us which state should be updated */
+    or the preferred response type. This tells us which state should be updated */
     if (isNum){
       this.setState(
         { numParagraphs : val }, 
@@ -27,7 +27,7 @@ class App extends Component {
       this.setState(
         { returnType : val },
         this.getApi(val, isNum) // Callback
-      );
+        );
     }
   }
   getApi(val, isNum){
@@ -63,10 +63,10 @@ class App extends Component {
   render() {
     return (
       <div className="jumbotron col-8 m-auto" style={{color: 'white'}}>
-        <h1>Bacon Ipsum Generator</h1>
-        <Input onChange={this.handleChange} />
-        <Card cardContent={this.state.text} />
-        <p>This generator is based on the <a href="https://baconipsum.com/json-api/">Bacon Ipsum API</a></p>
+      <h1>Bacon Ipsum Generator</h1>
+      <Input onChange={this.handleChange} />
+      <Card cardContent={this.state.text} />
+      <p>This generator is based on the <a href="https://baconipsum.com/json-api/">Bacon Ipsum API</a></p>
       </div>
       );
   }
