@@ -33,7 +33,6 @@ export class Input extends React.Component{
 		);
 	}
 }
-
 Input.propTypes = {
 	onChange : PropTypes.func
 }
