@@ -11,7 +11,7 @@ export class Input extends React.Component{
 		let isNum = true;
 		if (val === 'html' || val === 'json'){
 			isNum = false;
-    	}
+		}
 		this.props.onChange(val, isNum);
 	}
 	render(){
