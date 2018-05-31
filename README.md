@@ -1,6 +1,9 @@
 ## About this app:
 This is a simple ipsum-style text generator using the Bacon Ipsum API. It was built using React and updates the page as the desired number of paragraphs or return type (with or without HTML tags).
 
+## Main code:
+located in text-generator/src/App.js
+
 --------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
